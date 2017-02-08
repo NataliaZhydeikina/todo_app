@@ -10,8 +10,10 @@
 </head>
 
 <body>
-  <div ng-model="name" contenteditable="true"></div>
-  <div>{{name}}</div>
+
+  <textarea ng-model="name"></textarea>
+  <div data-ng-bind="name"></div>
+
 </body>
 
 </html>
