@@ -13,7 +13,11 @@
 
   <textarea ng-model="name"></textarea>
   <div data-ng-bind="name"></div>
-
+  <div> 10 * 10 = {{10 * 10}}</div>
+  <div ng-init="language='AngularJS'">
+    {{'language'}} {{language}}
+  </div>
+  Your Preffer Language: <input type="text" name="PreferLanguage" ng-model="language">
 </body>
 
 </html>
