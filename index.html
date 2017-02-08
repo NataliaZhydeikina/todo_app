@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  Your Name: <input type="text" name="" ng-model="name"><br> {{'Welcome' + name | lowercase }}
+  Currency: <input type="text" ng-model="price">
+  <br> {{ price | currency }}
 
   <script>
   </script>
