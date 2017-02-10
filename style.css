@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+body , div, h1, input, ul{
+  font-family: 'Sansita', sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+h1{
+  font-family: 'Barrio', cursive;
+  font-size: 3vw;
+  padding: 10px;
+  color:#fff;
+}
+.head div{
+  color:#fff;
+}
+input{
+  max-width: 500px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: #fff;
+}
+.done-false {}
+
+.done-true {
+  color: #DEDEDE;
+  text-decoration: line-through;
+}
+
+span[contenteditable='true'] {
+  background-color: #bEbEbE;
+  color: #666;
+  padding:5px;
+  border-radius: 5px;
+}
+ li{
+  font-family: 'Sansita', sans-serif;
+  font-size: 3vw;
+  max-width: 500px;
+  margin-left: 30%;
+  text-align: left;
+}
+.head{
+  background: url(fon.png) no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+article{
+  display:inline;
+}
+section{
+  text-align: center;
+}

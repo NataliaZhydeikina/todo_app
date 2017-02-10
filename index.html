@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Angular JS</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="controller.js"></script>
 </head>
 
-<body>
-  <div ng-include="'includehtml.html'"></div>
-  <script>
-  </script>
+<body ng-app="mainApp" ng-controller="app">
+  <section>
 
+    <article>
+      <div class="head">
+        <div>{{greatMessage}}</div>
+        <h1>Add A Task</h1>
+        <input ng-model="task" ng-keyup="searchEnter()" type="text">
+
+      </div>
+      <div id="taskToShow">
+        <ul>
+          <li ng-repeat="oneTask in tasks track by $index">
+            <input type="checkbox" ng-model="oneTask.status">
+            <span contentEditable='false' ng-dblclick='contentEdit(oneTask.taskMessage)' ng-keydown='enterAgain(oneTask.taskMessage)' ng-model='oneTask.taskMessage' class="done-{{oneTask.status}}">
+              {{oneTask.taskMessage}}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </body>
 
 </html>
